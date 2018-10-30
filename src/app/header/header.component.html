@@ -1,0 +1,41 @@
+<header [ngStyle]="{
+  'background': 'linear-gradient(0deg, rgba(119, 233, 207, 0.5), 
+                rgba(119, 233, 207, 0.5)), 
+                url(assets/images/ASFprospect.jpg) center center / cover no-repeat'}">
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li routerLinkActive="active">
+        <a routerLink="books">Home</a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="books">Ausleihung eines Objekts beantragen </a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="books">Objekt eingeben </a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="books">Suche nach einem Objekt</a>
+      </li>
+    
+      <li routerLinkActive="active">
+        <a routerLink="books">Über uns</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li routerLinkActive="active" *ngIf="!isAuth">
+        <a routerLink="auth/signup">Konto erstellen</a>
+      </li>
+      <li routerLinkActive="active" *ngIf="!isAuth">
+        <a routerLink="auth/signin">Anmelden</a>
+      </li>
+
+      <li>
+        <a (click)="onSignOut()"
+            style="cursor:pointer"
+            *ngIf="isAuth">Abmelden</a>
+      </li>
+    </ul>
+  </div>
+</nav>

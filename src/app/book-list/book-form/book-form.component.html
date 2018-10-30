@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <h2>Erstellen Sie ein gefundene Objekt </h2>
+      <h4>(Dokument, Geräte, Schlüssel,...)</h4>
+      <form [formGroup]="bookForm" (ngSubmit)="onSaveBook()">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" id="title"
+                 class="form-control" formControlName="title">
+        </div>
+        <div class="form-group">
+          <label for="author">Stadt</label>
+          <input type="text" id="author"
+                 class="form-control" formControlName="author">
+        </div>
+        <div class="form-group">
+          <label for="synopsis">Beschreibung</label>
+          <textarea id="synopsis"
+                    class="form-control" formControlName="synopsis">
+          </textarea>
+        </div>
+
+        <div class="form-group">
+          <h4>Bild hinzufügen</h4>
+          <input type="file" (change)="detectFiles($event)"
+                 class="form-control" accept="image/*">
+          <p class="text-success" *ngIf="fileUploaded">Bild wurde gedoawload!</p>
+      </div>
+      <button class="btn btn-success" [disabled]="bookForm.invalid || fileIsUploading"
+            type="submit">Speichern
+      </button>
+  
+      </form>
+    </div>
+  </div>
