@@ -14,11 +14,13 @@ import { AuthGuardService } from './services/auth-guard.service';
 import {HttpClientModule} from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {RouterModule, Routes} from '@angular/router';
+import { KontaktComponent } from './kontakt/kontakt.component';
 
 const appRoutes:Routes = [
 { path:'auth/signup', component:SignupComponent} , 
 { path: 'auth/signin', component: SigninComponent },
 { path: 'books', canActivate:[AuthGuardService],component: BookListComponent },
+{ path: 'kontakt',component: KontaktComponent },
 { path: 'books/new',canActivate:[AuthGuardService], component: BookFormComponent },
 { path: 'books/view/:id', canActivate:[AuthGuardService], component: SingleBookComponent },
 { path: '', redirectTo: 'books', pathMatch: 'full' },
@@ -33,7 +35,8 @@ const appRoutes:Routes = [
     BookListComponent,
     SingleBookComponent,
     BookFormComponent,
-    HeaderComponent
+    HeaderComponent,
+    KontaktComponent
   ],
   imports: [
     BrowserModule,
