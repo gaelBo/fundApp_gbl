@@ -1,12 +1,8 @@
- 
-<nav style="background-color: rgb(12, 12, 12);" >
-  <div  align="center">
-      <img  src="assets/images/ASF_baniere.jpg" git >
-  </div>
+<nav  style="background-color: #e3f2fd;" > 
   <div class="container-fluid">
     <ul class="nav navbar-nav">
       <li routerLinkActive="active">
-        <a routerLink="books">Accueil</a>
+        <a routerLink="books">Home</a>
       </li>
       <li routerLinkActive="active">
         <a routerLink="auth/signin">Ausleihung eines Objekts beantragen </a>
@@ -20,19 +16,8 @@
     
       <li routerLinkActive="active">
         <a routerLink="kontakt">Über uns</a>
-        
       </li>
-
-      <li routerLinkActive="active">
-          <a routerLink="books"></a>
-          <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Recherche</button>
-            </form>
-        </li>
     </ul>
-    
-
     <ul class="nav navbar-nav navbar-right">
       <li routerLinkActive="active" *ngIf="!isAuth">
         <a routerLink="auth/signup">Konto erstellen</a>
@@ -49,4 +34,3 @@
     </ul>
   </div>
 </nav>
-

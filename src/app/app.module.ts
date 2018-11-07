@@ -15,6 +15,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {RouterModule, Routes} from '@angular/router';
 import { KontaktComponent } from './kontakt/kontakt.component';
+import { FooterComponent } from './footer/footer.component';
 
 const appRoutes:Routes = [
 { path:'auth/signup', component:SignupComponent} , 
@@ -36,7 +37,8 @@ const appRoutes:Routes = [
     SingleBookComponent,
     BookFormComponent,
     HeaderComponent,
-    KontaktComponent
+    KontaktComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
