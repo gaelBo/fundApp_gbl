@@ -1,36 +1,25 @@
-<nav  style="background-color: #e3f2fd;" > 
+<nav  style="background-color: #111213;"> 
   <div class="container-fluid">
     <ul class="nav navbar-nav">
       <li routerLinkActive="active">
-        <a routerLink="books">Home</a>
+        <a routerLink="books">Impressum </a>
+        <h4></h4>
+      </li>
+      <li><a href="https://github.com/gaelBo">Webmaster</a> </li>
+      <li routerLinkActive="active">
+        <a routerLink="auth/signin">Nous contactez : </a>
       </li>
       <li routerLinkActive="active">
-        <a routerLink="auth/signin">Ausleihung eines Objekts beantragen </a>
+        <a routerLink="auth/signin">Aides ! </a>
       </li>
       <li routerLinkActive="active">
-        <a routerLink="auth/signin">Objekt eingeben </a>
-      </li>
-      <li routerLinkActive="active">
-        <a routerLink="books">Suche nach einem Objekt</a>
+        <a routerLink="books"> Engagements </a>
       </li>
     
       <li routerLinkActive="active">
-        <a routerLink="kontakt">Über uns</a>
+        <a routerLink="kontakt">Archivs </a>
       </li>
     </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li routerLinkActive="active" *ngIf="!isAuth">
-        <a routerLink="auth/signup">Konto erstellen</a>
-      </li>
-      <li routerLinkActive="active" *ngIf="!isAuth">
-        <a routerLink="auth/signin">Anmelden</a>
-      </li>
-
-      <li>
-        <a (click)="onSignOut()"
-            style="cursor:pointer"
-            *ngIf="isAuth">Abmelden</a>
-      </li>
-    </ul>
+   
   </div>
 </nav>

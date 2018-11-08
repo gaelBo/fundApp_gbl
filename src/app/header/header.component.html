@@ -1,30 +1,34 @@
  
 <nav style="background-color: rgb(12, 12, 12);" >
   <div  align="center">
-      <img  src="assets/images/ASF_baniere.jpg" git >
+      <img  src="assets/images/ASF_baniere.jpg" height="100" width="500">
   </div>
   <div class="container-fluid">
-    <ul class="nav navbar-nav">
+    <ul class="nav navbar-nav navbar-center">
       <li routerLinkActive="active">
-        <a routerLink="books">Accueil</a>
+        <a routerLink="accueil">Accueil </a>
       </li>
       <li routerLinkActive="active">
-        <a routerLink="auth/signin">Ausleihung eines Objekts beantragen </a>
+        <a routerLink="app-nos-actions"> Nos Actions </a>
       </li>
       <li routerLinkActive="active">
-        <a routerLink="auth/signin">Objekt eingeben </a>
+        <a routerLink="auth/signin"> Faire un Don  </a>
       </li>
       <li routerLinkActive="active">
-        <a routerLink="books">Suche nach einem Objekt</a>
+        <a routerLink="books"> Prochain Rendez-vous</a>
       </li>
     
       <li routerLinkActive="active">
-        <a routerLink="kontakt">Über uns</a>
-        
-      </li>
+          <a routerLink="historique"> Histoire </a>
+        </li>
 
       <li routerLinkActive="active">
-          <a routerLink="books"></a>
+        <a routerLink="kontakt"> Contact </a>
+      </li>
+      <li routerLinkActive="active">
+          <a routerLink="auth/signin"> Forum:Vos avis comptent </a>
+        </li>
+      <li routerLinkActive="active">
           <form class="form-inline my-2 my-lg-0">
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Recherche</button>
@@ -35,16 +39,16 @@
 
     <ul class="nav navbar-nav navbar-right">
       <li routerLinkActive="active" *ngIf="!isAuth">
-        <a routerLink="auth/signup">Konto erstellen</a>
+        <a routerLink="auth/signup"> Créer un compte </a>
       </li>
       <li routerLinkActive="active" *ngIf="!isAuth">
-        <a routerLink="auth/signin">Anmelden</a>
+        <a routerLink="auth/signin"> Connecter </a>
       </li>
 
       <li>
         <a (click)="onSignOut()"
             style="cursor:pointer"
-            *ngIf="isAuth">Abmelden</a>
+            *ngIf="isAuth"> Déconnecter </a>
       </li>
     </ul>
   </div>

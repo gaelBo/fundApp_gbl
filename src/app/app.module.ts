@@ -16,6 +16,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {RouterModule, Routes} from '@angular/router';
 import { KontaktComponent } from './kontakt/kontakt.component';
 import { FooterComponent } from './footer/footer.component';
+import { AccueilComponent } from './accueil/accueil.component';
+import { HistoriqueComponent } from './historique/historique.component';
+import { NosActionsComponent } from './nos-actions/nos-actions.component';
+
 
 const appRoutes:Routes = [
 { path:'auth/signup', component:SignupComponent} , 
@@ -24,6 +28,9 @@ const appRoutes:Routes = [
 { path: 'kontakt',component: KontaktComponent },
 { path: 'books/new',canActivate:[AuthGuardService], component: BookFormComponent },
 { path: 'books/view/:id', canActivate:[AuthGuardService], component: SingleBookComponent },
+{ path: 'accueil',component: AccueilComponent },
+{ path: 'historique',component: HistoriqueComponent },
+{ path: 'app-nos-actions',component: NosActionsComponent },
 { path: '', redirectTo: 'books', pathMatch: 'full' },
 { path: '**', redirectTo: 'books' }
 ];
@@ -38,7 +45,11 @@ const appRoutes:Routes = [
     BookFormComponent,
     HeaderComponent,
     KontaktComponent,
-    FooterComponent
+    FooterComponent,
+    AccueilComponent,
+    HistoriqueComponent,
+    NosActionsComponent,
+   
   ],
   imports: [
     BrowserModule,
