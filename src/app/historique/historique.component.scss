@@ -23,3 +23,18 @@ p{
 {
     clear: both;
 }
+
+body
+{
+    background-image: url("logo.jpg");
+   // background-attachment: fixed; /* Le fond restera fixe */
+    background-repeat: no-repeat; /* Le fond ne sera pas répété */
+    background-position: top right; /* Le fond sera placé en haut à droite */
+}
+
+.moins_important{
+    background-color: black;
+    color: white;
+    opacity: 1;
+    border-radius: 10px;
+}

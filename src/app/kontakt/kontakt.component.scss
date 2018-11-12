@@ -1,6 +1,7 @@
 
 h1{
     color: blue;
+    //font-size: 2em;
 }
 h4{
    // font-size: 25px // taille absolue
@@ -10,4 +11,8 @@ h4{
 .important{
    font-family: 'Times New Roman', Times, serif;
    color:red; 
+}
+a:hover{ //hover: losrquon survole le mot
+    text-decoration: underline;
+    color:red;
 }

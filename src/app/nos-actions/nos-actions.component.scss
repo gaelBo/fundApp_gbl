@@ -1,8 +1,28 @@
+
+h1{
+    color: blue;
+    text-shadow: 2px 2px 4px black; //Ombrage du text
+
+}
 h3{
-    color:blue;
-    
+   // font-size: 25px // taille absolue
+   font-size: x-large;
 }
 
 .important{
+   font-family: 'Times New Roman', Times, serif;
+   color:red; 
+}
+
+.moins_important{
+    background-color:rgb(52, 176, 233);
+    color:black;
+    opacity: 1;
+    box-shadow: 10px 10px 0px red; //ombrage de blog
+
+}
+
+a:hover{
+    text-decoration: underline;
     color:red;
 }
