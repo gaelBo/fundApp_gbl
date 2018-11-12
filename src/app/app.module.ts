@@ -19,6 +19,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { HistoriqueComponent } from './historique/historique.component';
 import { NosActionsComponent } from './nos-actions/nos-actions.component';
+import { FaireDonComponent } from './faire-don/faire-don.component';
 
 
 const appRoutes:Routes = [
@@ -31,6 +32,7 @@ const appRoutes:Routes = [
 { path: 'accueil',component: AccueilComponent },
 { path: 'historique',component: HistoriqueComponent },
 { path: 'app-nos-actions',component: NosActionsComponent },
+{ path: 'app-faire-don',component: FaireDonComponent },
 { path: '', redirectTo: 'books', pathMatch: 'full' },
 { path: '**', redirectTo: 'books' }
 ];
@@ -49,6 +51,7 @@ const appRoutes:Routes = [
     AccueilComponent,
     HistoriqueComponent,
     NosActionsComponent,
+    FaireDonComponent,
    
   ],
   imports: [

@@ -11,15 +11,13 @@ h1{
 p{
     text-align: justify;
 }
-.signature{
-    text-align: right
+
+h4{
+   // font-size: 25px // taille absolue
+   font-size: x-large;
 }
-//////////////////////////////////////////////////////
-.imageflottante
-{
-    float: left;
-}
-.dessous
-{
-    clear: both;
+
+.important{
+   font-family: 'Times New Roman', Times, serif;
+   color:red; 
 }

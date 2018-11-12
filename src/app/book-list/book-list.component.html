@@ -1,20 +1,100 @@
+<html>
+  <head>
+    <title>
+      Nos Activités
+    </title>
+
+    <script type="text/javascript">
+      var signe = -1;
+      var clignotementFading = function(){
+      var obj = document.getElementById('LblClignotant');
+      if (obj.style.opacity >= 0.96){
+      signe = -1;
+      }
+      if (obj.style.opacity <= 0.04){
+      signe = 1;
+      }
+      obj.style.opacity = (obj.style.opacity * 1) + (signe * 0.04);
+      };
+      
+      // mise en place de l appel de la fonction toutes les 0.085 secondes
+      // Pour arrêter le clignotement : clearInterval(periode);
+      periode = setInterval(clignotementFading, 85 );
+      </script>
+
+
+  </head>
+
+  <body>
+    <h1> Activité avenir:</h1>
+    <table>
+        <tr>
+          <td>
+              <h3 class="important" >THEME: LE CRI DE L'ESPOIR </h3>
+              <p>
+                  <mark >
+                    <ul>
+                        <label id="LblClignotant"> Date: 13 au 25 Déc. 2018 <br/>
+                      Lieu: Mora Goshi ( Extrême Nord du Cameroun) </label> 
+                   <span >
+                          <li>Evangélisation
+                          <li>Encadrement dans le discipolat, 
+                          <li>Distributions des dons, 
+                          <li>Consultations et soins médicaux
+                          <li>Prières et Conseils divers
+                   </span>
+                    </ul>
+                    
+                 </mark>  
+                 </p>
+          
+
+          </td>
+          
+          <td>
+              <p>
+                  <figure>
+                      <a href="assets/images/carteCameroun.jpg">
+                        <img src="assets/images/carteCameroun.jpg"  width="300" alt="Photo de chips" title="Cliquez pour agrandir" /></a>
+                      <figcaption>https://fr.wikipedia.org/wiki/Fichier:CAMEROUN.svg </figcaption>
+                  </figure>
+              </p>
+
+          </td>
+        </tr>
+      </table>
+    
+    
+
+
+
+
+
+    <h2>Activités passées</h2>
+
+
 <div class="row">
-  <div class="col-xs-12">
-    <h2></h2>
-    <div class="list-group">
-      <button
-        class="list-group-item"
-        *ngFor="let book of books; let i = index"
-        (click)="onViewBook(i)">
-        <h3 class="list-group-item-heading">
-          {{ book.title }}
-          <button class="btn btn-default pull-right" (click)="onDeleteBook(book)">
-            <span class="glyphicon glyphicon-minus"></span>
-          </button>
-        </h3>
-        <p class="list-group-item-text">{{ book.author }}</p>
-      </button>
+    <div class="col-xs-12">
+      <h2></h2>
+      <div class="list-group">
+        <button
+          class="list-group-item"
+          *ngFor="let book of books; let i = index"
+          (click)="onViewBook(i)">
+          <h3 class="list-group-item-heading">
+            {{ book.title }}
+            <button class="btn btn-default pull-right" (click)="onDeleteBook(book)">
+              <span class="glyphicon glyphicon-minus"></span>
+            </button>
+          </h3>
+          <p class="list-group-item-text">{{ book.author }}</p>
+        </button>
+      </div>
+      <button class="btn btn-primary" (click)="onNewBook()">Nouveau Post</button>
     </div>
-    <button class="btn btn-primary" (click)="onNewBook()">Nouveau Post</button>
   </div>
-</div>
+    
+  </body>
+</html>
+
+
