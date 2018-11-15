@@ -1,0 +1,33 @@
+#section{
+background-position-x: 1cm;
+color:"red";
+
+}
+
+#nav{
+    text-align: center;
+   // width: 60%;
+   // min-height:40% ;
+    //padding-right: 8px; //marge interieur
+   // margin-left: 1px; //marge ext
+   margin:left;
+    overflow: auto ;//barre de defilement si il ya debordement
+    word-wrap:auto;
+    width: 100%;
+    height: 150px;
+    text-align: justify;
+    border: 1px solid black;
+    overflow: auto;
+
+    h2{
+        color:blue;
+    }
+}
+article{
+    margin:right;
+    h2{
+        color:blue;
+    }
+}
+
+

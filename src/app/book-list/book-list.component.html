@@ -3,26 +3,6 @@
     <title>
       Nos Activités
     </title>
-
-    <script type="text/javascript">
-      var signe = -1;
-      var clignotementFading = function(){
-      var obj = document.getElementById('LblClignotant');
-      if (obj.style.opacity >= 0.96){
-      signe = -1;
-      }
-      if (obj.style.opacity <= 0.04){
-      signe = 1;
-      }
-      obj.style.opacity = (obj.style.opacity * 1) + (signe * 0.04);
-      };
-      
-      // mise en place de l appel de la fonction toutes les 0.085 secondes
-      // Pour arrêter le clignotement : clearInterval(periode);
-      periode = setInterval(clignotementFading, 85 );
-      </script>
-
-
   </head>
 
   <body>
@@ -31,10 +11,10 @@
         <tr>
           <td>
               <h3 class="important">THEME: LE CRI DE L'ESPOIR </h3>
-              <p >
+              <p id="gc">
                   <mark >
-                    <ul>
-                        <label id="LblClignotant"> Date: 13 au 25 Déc. 2018 <br/>
+                    <ul >
+                        <label > Date: 13 au 25 Déc. 2018 <br/>
                       Lieu: Mora Goshi ( Extrême Nord du Cameroun) </label> 
                    <span >
                      <p class="moins_important">

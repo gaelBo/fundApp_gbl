@@ -27,9 +27,9 @@ p{
 body
 {
     background-image: url("logo.jpg");
-   // background-attachment: fixed; /* Le fond restera fixe */
-    background-repeat: no-repeat; /* Le fond ne sera pas répété */
-    background-position: top right; /* Le fond sera placé en haut à droite */
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    background-position: top right; 
 }
 
 .moins_important{
@@ -37,4 +37,27 @@ body
     color: white;
     opacity: 1;
     border-radius: 10px;
+   // width: 500px
+   // text-align="center";
+}
+
+p[couleurspecifique]{
+    color:red;
+}
+section{
+    margin: 1px;
+    display:block;
+    text-align: center;
+
+}
+
+aside:hover{
+    background-color:beige;
+}
+
+image{
+    padding: 5px;
+    display: block;
+    background-clip: content-box;
+
 }
