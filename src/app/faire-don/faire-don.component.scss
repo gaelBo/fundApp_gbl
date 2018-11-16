@@ -1,3 +1,7 @@
+body{
+    //background-color: rgb(247, 243, 243);
+}
+
 .introduction{
     color: brown;
     font-family: 'Times New Roman', Times, serif;
@@ -20,4 +24,18 @@ h4{
 .important{
    font-family: 'Times New Roman', Times, serif;
    color:red; 
+}
+.element1{
+    //background-color: lightblue;
+    background-color: rgb(247, 243, 243);
+    width:30%;
+    font-size:x-large;
+}
+.element2{
+    //background-color: rgb(247, 243, 243);    width:50%;
+    font-size:x-large; 
+}
+#conteneur{
+    display: flex;
+    justify-content:space-evenly;
 }
