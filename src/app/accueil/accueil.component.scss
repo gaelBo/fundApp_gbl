@@ -1,30 +1,72 @@
-#conteneurAccueil{
-    display: flex;
-    justify-content:space-evenly;
+body{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+}
+
+.conteneur{
+   // display: flex;
+   // justify-content: center;
 
 }
 
-
-.section1{
-float: left;
-width: "25%";
-border: 1px solid black;
-//background-color: darkgray;
+.verse_biblique{
+    float: left;
+    background-color: lightblue;
 }
 
-.section2{
-    margin-left: 170px;
-    width: 60%;
-    border: 1px solid blue; //color des bordure
-    //text-align: center;
-   // width: 60%;
-   // min-height:40% ;
-    //padding-right: 8px; //marge interieur
-   // margin-left: 1px; //marge ext
-    
+
+.diaporama
+{
+margin: 0 auto;
+width: 960px;
+height: 500px;
+border: 3px solid #333;
+//background-image: url("\images\EventASF28.jpeg");
+//src\app\accueil\images\EventASF28.jpeg
+
+-webkit-animation-name:ASF_Album;
+-webkit-animation-duration: 9s; //valeur total de lanimation
+-webkit-animation-timing-function:linear;
+-webkit-animation-iteration-count: infinite; //nbre de fois que l animation joue
+-webkit-animation-direction: normal; 
+
+//pour les ancien navigateur de MOZilla firefox
+-moz-animation-name:ASF_Album;
+-moz-animation-duration: 9s; //valeur total de lanimation
+-moz-animation-timing-function:linear;
+-moz-animation-iteration-count: infinite; //nbre de fois que l animation joue
+-moz-animation-direction: normal; 
+
+//navigateur de version  non precisee
+//pour les ancien navigateur
+animation-name:ASF_Album;
+animation-duration: 9s; //valeur total de lanimation
+animation-timing-function:linear;
+animation-iteration-count: infinite; //nbre de fois que l animation joue
+animation-direction: normal; 
 
 }
 
-h2{
-    color:blue;
+/*
+//donner une animation a notre dispo
+@-webkit-keyframes diaporama{
+0%{background-image:url("\images\ASF_baniere.jpg"); }
+33%{background-image:url("\images\ASF_logo.png"); }
+66%{background-image:url("\images\EventASF6.jpeg"); }
 }
+
+@-moz-keyframes diaporama{
+    0%{background-image:url("\images\ASF_baniere.jpg"); }
+    33%{background-image:url("\images\ASF_logo.png"); }
+    66%{background-image:url("\images\EventASF6.jpeg"); }
+    }
+
+@keyframes diaporama{
+0%{background-image:url("\images\ASF_baniere.jpg"); }
+33%{background-image:url("\images\ASF_logo.png"); }
+66%{background-image:url("\images\EventASF6.jpeg"); }
+
+
+}
+*/

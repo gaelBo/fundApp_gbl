@@ -49,7 +49,7 @@ section h1, h1
 {
     font-family: Dayrom, serif;
     font-weight: normal;
-    text-transform: uppercase; //transformation des test en Majuscule # lowercase
+    //text-transform: uppercase; //transformation des test en Majuscule # lowercase
 }
 section
 {
@@ -82,6 +82,7 @@ aside
     border-radius: 5px;
     padding: 10px;
     margin-right:5%;
+    margin-left: 3%;
     font-size: 0.9em;
 }
 
@@ -106,3 +107,4 @@ aside img
 {
     margin-right: 5px;
 }
+

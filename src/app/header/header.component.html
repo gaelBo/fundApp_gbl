@@ -1,4 +1,67 @@
- 
+<div id="conteneur">
+    <div class="element_logo" >
+        <img src="assets/images/ASF_logo3.png" alt="Logo d ASF" width="30%" />       
+    </div>
+
+    <div class="element_entete">
+        <h3> Grande Campagne d'evangelisation par  Amour Sans Frontière</h3>
+        (Groupe des frères qui font dans l'Evangèlisation , le Discipolat et dans les oeuvres sociales 
+        selon <a href="#" >Matt.28/19 </a>)
+
+    </div>
+</div>
+
+<div class="container-fluid">
+  <ul class="nav navbar-nav navbar-center">
+    <li routerLinkActive="active">
+      <a routerLink="accueil">Accueil </a>
+    </li>
+    <li routerLinkActive="active">
+      <a routerLink="app-nos-actions"> Nos Actions </a>
+    </li>
+    <li routerLinkActive="active">
+      <a routerLink="app-faire-don"> Faire un Don  </a>
+    </li>
+    <li routerLinkActive="active">
+      <a routerLink="books" title="Notre Agenda ..."> Prochain Rendez-vous</a>
+    </li>
+  
+    <li routerLinkActive="active">
+        <a routerLink="historique"> Histoire </a>
+      </li>
+
+    <li routerLinkActive="active">
+      <a routerLink="kontakt"> Contact </a>
+    </li>
+    <li routerLinkActive="active">
+        <a routerLink="auth/signin"> Forum:Vos avis comptent </a>
+      </li>
+    <li routerLinkActive="active">
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Recherche</button>
+          </form>
+      </li>
+  </ul>
+  
+
+  <ul class="nav navbar-nav navbar-right">
+    <li routerLinkActive="active" *ngIf="!isAuth">
+      <a routerLink="auth/signup"> Créer un compte </a>
+    </li>
+    <li routerLinkActive="active" *ngIf="!isAuth">
+      <a routerLink="auth/signin"> Connecter </a>
+    </li>
+
+    <li>
+      <a (click)="onSignOut()"
+          style="cursor:pointer"
+          *ngIf="isAuth"> Déconnecter </a>
+    </li>
+  </ul>
+</div>
+
+<!--
 <nav style="background-color: rgb(12, 12, 12);" >
   <div  align="center">
       <img  src="assets/images/ASF_baniere.jpg" height="100" width="500" id="logo">
@@ -54,3 +117,4 @@
   </div>
 </nav>
 
+-->
