@@ -20,6 +20,7 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { HistoriqueComponent } from './historique/historique.component';
 import { NosActionsComponent } from './nos-actions/nos-actions.component';
 import { FaireDonComponent } from './faire-don/faire-don.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 
 const appRoutes:Routes = [
@@ -59,7 +60,11 @@ const appRoutes:Routes = [
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    //ngx-bootstrap
+   // BsDropdownModule.forRoot(),
+    CarouselModule.forRoot()
+
   ],
   providers: [
     AuthService,

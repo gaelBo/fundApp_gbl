@@ -4,69 +4,34 @@ body{
     width: 100%;
 }
 
-.conteneur{
-   // display: flex;
-   // justify-content: center;
-
-}
-
 .verse_biblique{
     float: left;
     background-color: lightblue;
 }
 
-
-.diaporama
+.img-main-carousel
 {
-margin: 0 auto;
-width: 960px;
-height: 500px;
-border: 3px solid #333;
-//background-image: url("\images\EventASF28.jpeg");
-//src\app\accueil\images\EventASF28.jpeg
-
--webkit-animation-name:ASF_Album;
--webkit-animation-duration: 9s; //valeur total de lanimation
--webkit-animation-timing-function:linear;
--webkit-animation-iteration-count: infinite; //nbre de fois que l animation joue
--webkit-animation-direction: normal; 
-
-//pour les ancien navigateur de MOZilla firefox
--moz-animation-name:ASF_Album;
--moz-animation-duration: 9s; //valeur total de lanimation
--moz-animation-timing-function:linear;
--moz-animation-iteration-count: infinite; //nbre de fois que l animation joue
--moz-animation-direction: normal; 
-
-//navigateur de version  non precisee
-//pour les ancien navigateur
-animation-name:ASF_Album;
-animation-duration: 9s; //valeur total de lanimation
-animation-timing-function:linear;
-animation-iteration-count: infinite; //nbre de fois que l animation joue
-animation-direction: normal; 
-
+  max-height: 500px;
+  margin: 0 auto;
+    //  width: 80%;
+   // height: 80%;
 }
+
+
 
 /*
-//donner une animation a notre dispo
-@-webkit-keyframes diaporama{
-0%{background-image:url("\images\ASF_baniere.jpg"); }
-33%{background-image:url("\images\ASF_logo.png"); }
-66%{background-image:url("\images\EventASF6.jpeg"); }
+section
+{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
 }
-
-@-moz-keyframes diaporama{
-    0%{background-image:url("\images\ASF_baniere.jpg"); }
-    33%{background-image:url("\images\ASF_logo.png"); }
-    66%{background-image:url("\images\EventASF6.jpeg"); }
-    }
-
-@keyframes diaporama{
-0%{background-image:url("\images\ASF_baniere.jpg"); }
-33%{background-image:url("\images\ASF_logo.png"); }
-66%{background-image:url("\images\EventASF6.jpeg"); }
-
-
+.aside1
+{
+    width: 80%;
+}
+.aside2
+{
+    width:20%;
 }
 */

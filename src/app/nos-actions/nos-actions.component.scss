@@ -35,3 +35,14 @@ a:hover{
     text-decoration: underline;
     color:red;
 }
+/* Responsive Design avec media queries (requetes media)
+Nouvelles règles si la fenêtre fait au plus 1024px de large */
+@media screen and (max-width: 1024px)
+{
+    .important
+    {
+        color:blue; 
+        background-color: black;
+        font-size: 1.2em;
+    }
+}

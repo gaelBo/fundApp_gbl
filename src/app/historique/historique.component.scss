@@ -92,5 +92,15 @@ image{
 }
 aside img
 {
-width: 40%
+width: 90%
+}
+
+@media all and (max-device-width: 480px)
+{
+    /* Vos règles CSS pour les mobiles ici 
+    
+    // permet de faire en sorte que notre site s adapte a la 
+    resolution du device mobile 
+    <meta name="viewport" content="width=device-width" />
+    */
 }
