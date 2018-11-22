@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "mybookmangementgbl": {
+    "amoursansfrontiere": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -36,7 +36,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/mybookmangementgbl",
+            "outputPath": "dist/amoursansfrontiere",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -74,18 +74,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "mybookmangementgbl:build"
+            "browserTarget": "amoursansfrontiere:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "mybookmangementgbl:build:production"
+              "browserTarget": "amoursansfrontiere:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mybookmangementgbl:build"
+            "browserTarget": "amoursansfrontiere:build"
           }
         },
         "test": {
@@ -127,11 +127,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "mybookmangementgbl:serve"
+            "devServerTarget": "amoursansfrontiere:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "mybookmangementgbl:serve:production"
+              "devServerTarget": "amoursansfrontiere:serve:production"
             }
           }
         },
@@ -147,5 +147,5 @@
       }
     }
   },
-  "defaultProject": "mybookmangementgbl"
+  "defaultProject": "amoursansfrontiere"
 }

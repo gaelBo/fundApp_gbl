@@ -8,7 +8,7 @@ import * as firebase from 'firebase';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'MeineBibliothek';
+  title = 'Amour_Sans_Frontière';
 
   constructor(){
      // Initialize Firebase
