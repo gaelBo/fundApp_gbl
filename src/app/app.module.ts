@@ -26,10 +26,12 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 const appRoutes:Routes = [
 { path:'auth/signup', component:SignupComponent} , 
 { path: 'auth/signin', component: SigninComponent },
-{ path: 'books', canActivate:[AuthGuardService],component: BookListComponent },
+{ path: 'books',component: BookListComponent },
 { path: 'kontakt',component: KontaktComponent },
-{ path: 'books/new',canActivate:[AuthGuardService], component: BookFormComponent },
-{ path: 'books/view/:id', canActivate:[AuthGuardService], component: SingleBookComponent },
+//authentifier avant de voir la page
+//{ path: 'books/new',canActivate:[AuthGuardService], component: BookFormComponent },
+{ path: 'books/new', component: BookFormComponent },
+{ path: 'books/view/:id', component: SingleBookComponent },
 { path: 'accueil',component: AccueilComponent },
 { path: 'historique',component: HistoriqueComponent },
 { path: 'app-nos-actions',component: NosActionsComponent },
