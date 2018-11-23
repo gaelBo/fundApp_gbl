@@ -21,3 +21,7 @@ Firebase
 Visual Studio Code
 ***************************************************
 Weiterentwicklung: Die mobile App. ist im Progress. (JAVA für Android Studio )
+************************************************
+Links:
+https://www.youtube.com/watch?v=LIYOCaQHUg4
+openclassroom
